@@ -1,15 +1,13 @@
-html,
-body {
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-  height: 100%;
-  width: 100%;
+  width: 100vw;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -309,10 +307,11 @@ footer p {
 
 @media only screen and (max-width: 540px) {
   .dropbtn{
-    margin-right: 10px;
+    margin-right: 0px;
   }
   .dropdown-content {
-    right: 26px;
+    right: 18px;
+    min-width: 130px;
   }
 }
 

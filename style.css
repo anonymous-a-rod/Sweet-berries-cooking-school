@@ -215,9 +215,12 @@ p.box-text {
 .box-special {
   color: white;
   background: linear-gradient(#ff4c4c, #a94e97);
-  justify-content: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: nowrap;
   cursor: pointer;
+  
 }
 
 .special-text {
@@ -226,7 +229,7 @@ p.box-text {
   font-weight: 800;
   font-size: 38px;
   line-height: 40px;
-  top: 26px;
+  top: 70px;
   left: 40px;
   width: 290px;
 }
@@ -242,7 +245,7 @@ p.box-text {
     font-weight: 800;
     font-size: 22px;
     line-height: 40px;
-    top: -9px;
+    top: 9px;
     left: 22px;
     width: 360px;
   }

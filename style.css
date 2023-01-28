@@ -1,12 +1,15 @@
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -15,7 +18,7 @@ h1 {
 
 p {
   font-size: 18px;
-  color: #83869A;
+  color: #83869a;
 }
 
 .header-container {
@@ -34,13 +37,13 @@ p {
   align-items: center;
   width: 65%;
   height: 200px;
-  margin-right:5%;
+  margin-right: 5%;
 }
 
 a.header {
   text-decoration: none;
   font-size: 28px;
-  color: #FF4C4C;
+  color: #ff4c4c;
   margin-left: 16px;
   margin-right: 16px;
 }
@@ -53,7 +56,7 @@ button.header {
   text-decoration: none;
   font-size: 20px;
   color: white;
-  background: linear-gradient(#FF4C4C,#A94E97);
+  background: linear-gradient(#ff4c4c, #a94e97);
   border: none;
   width: 167px;
   height: 56px;
@@ -62,13 +65,12 @@ button.header {
   cursor: pointer;
 }
 
-.banner{
+.banner {
   width: 757px;
   height: 364px;
   border-radius: 39px;
   margin: 28px;
 }
-
 
 .body-container {
   display: flex;
@@ -92,42 +94,57 @@ p.intro {
 }
 
 @media only screen and (max-width: 1460px) {
-   
   p.intro {
-  width: 500px;
-  margin-left: 42px;
-}
-
-  img.banner{
-  width: 612px;
-  height: 344px;
-}
-
-  .body-container {
-  flex-direction: column;
-    align-items: center;
+    width: 500px;
+    margin-left: 42px;
   }
 
+  img.banner {
+    width: 612px;
+    height: 344px;
+  }
+
+  .body-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 800px) {
-  img.banner{
-  width: 379px;
-  height: 217px;
-  border-radius: 39px;
-  margin: 23px;
-}
-    p.intro {
+  img.banner {
+    width: 379px;
+    height: 217px;
+    border-radius: 39px;
+    margin: 23px;
+  }
+  p.intro {
     width: 360px;
     margin-left: 0px;
-}
+  }
   .text-container {
-  width: 340px;
-}
+    width: 340px;
+  }
   h1 {
     font-size: 30px;
   }
-
+  @media only screen and (max-width: 540px) {
+    img.banner {
+      width: 360px;
+      height: 206px;
+      border-radius: 37px;
+      margin: 23px 0px;
+    }
+    p.intro {
+      width: 320px;
+      margin-left: 0px;
+    }
+    .text-container {
+      width: 340px;
+    }
+    h1 {
+      font-size: 28px;
+    }
+}
 }
 
 .box-container {
@@ -162,8 +179,8 @@ p.intro {
     max-width: 1100px;
   }
   .box {
-    margin: 28px 10px;  
-  } 
+    margin: 28px 10px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -171,21 +188,21 @@ p.intro {
     max-width: 400px;
   }
   .box {
-    margin: 36px 10px;  
-  } 
+    margin: 36px 10px;
+  }
 }
 
-p.box-text{
+p.box-text {
   width: 285px;
 }
 
 .get-started {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
-  color: #FF4C4C;
+  color: #ff4c4c;
   cursor: pointer;
 }
 
@@ -199,7 +216,7 @@ p.box-text{
 
 .box-special {
   color: white;
-  background: linear-gradient(#FF4C4C,#A94E97);
+  background: linear-gradient(#ff4c4c, #a94e97);
   justify-content: flex-start;
   flex-wrap: nowrap;
   cursor: pointer;
@@ -222,22 +239,21 @@ p.box-text{
     height: 34px;
   }
   .special-text {
-  position: absolute;
-  color: white;
-  font-weight: 800;
-  font-size: 22px;
-  line-height: 40px;
-  top: -9px;
-  left: 22px;
-  width: 360px;
+    position: absolute;
+    color: white;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 40px;
+    top: -9px;
+    left: 22px;
+    width: 360px;
+  }
 }
-}
-
 
 footer {
-  background: #FF4C4C;
+  background: #ff4c4c;
   width: 100vw;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 28px;
   line-height: 40px;
@@ -245,7 +261,7 @@ footer {
 }
 
 footer p {
-  color:#FFFFFF;
+  color: #ffffff;
   padding-left: 50px;
   margin-top: 24px;
 }
@@ -255,36 +271,49 @@ footer p {
     text-align: center;
   }
   footer p {
-  padding-left: 0px;
-}
-
+    padding-left: 0px;
+  }
 }
 
 /* Drop down for nav menu */
 
 .dropdown .dropbtn {
-  font-size: 17px;    
+  font-size: 17px;
   border: none;
   outline: none;
   color: #000000;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
-  margin: 0;
   z-index: 1;
-  
+}
+
+.dropbtn{
+  margin-right: 30px;
+}
+
+.dropdown{
+  position: relative;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   min-width: 160px;
-  right: 20px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: 52px;
+  right: 46px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  background:white;
-  
+  background: white;
+}
 
+@media only screen and (max-width: 540px) {
+  .dropbtn{
+    margin-right: 10px;
+  }
+  .dropdown-content {
+    right: 26px;
+  }
 }
 
 .dropdown-content a {
@@ -294,46 +323,62 @@ footer p {
   text-decoration: none;
   display: block;
   text-align: left;
-   z-index: 1;
+  z-index: 1;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color:white;
-  opacity: 50%;
-  color: black;
-   z-index: 1;
+@media(hover: hover){
+  .topnav a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: white;
+    opacity: 50%;
+    color: black;
+    z-index: 1;
+  }
+
+  .dropdown-content a:hover {
+    background: linear-gradient(#ff4c4c, #a94e97);
+    color: white;
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 }
 
-.dropdown-content a:hover {
-  background: linear-gradient(#FF4C4C,#A94E97);
-  color: white;
-   z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
+.active {
   display: block;
 }
 
-@media only screen and (min-width: 800px)  {
 
+
+
+@media only screen and (min-width: 800px) {
   .dropdown {
     height: 0px;
     width: 0px;
     visibility: hidden;
     margin-right: 0%;
   }
-  
 }
 
 @media only screen and (max-width: 800px) {
   .menu-1 {
     visibility: hidden;
   }
+  .header-right {
+    margin: 0;
+    padding: 0;
+  }
+  .header-container{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 rect {
-   stroke:#FF4C4C;
-    fill: #FF4C4C;
+  stroke: #ff4c4c;
+  fill: #ff4c4c;
 }
 
 /* end of Drop down for nav menu */
@@ -341,7 +386,7 @@ rect {
 /* Registration Page */
 
 form label {
-  font-size: 18px ;
+  font-size: 18px;
 }
 
 form h2 {
@@ -356,16 +401,15 @@ option {
   display: block;
   box-sizing: border-box;
   margin-top: 4px;
-  color: #A9A9AC;
+  color: #a9a9ac;
   font-size: 16px;
   font-weight: 300px;
 }
 
-
 /* form */
 
 .background {
-  background-image: url('assets/banner.jpg');
+  background-image: url("assets/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 200px 0;
@@ -379,7 +423,7 @@ form {
   margin: auto auto;
   width: 60%;
   max-width: 420px;
-  background: linear-gradient(#FF4C4C,#A94E97);
+  background: linear-gradient(#ff4c4c, #a94e97);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   opacity: 0.95;
 }
@@ -396,19 +440,17 @@ form {
   color: rgba(66, 72, 116);
   background-color: F4EEFF;
   background-clip: padding-box;
-  border: 1px solid  white;
+  border: 1px solid white;
   border-radius: 4px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   letter-spacing: 0.5px;
-  
 }
 
 .form-control:focus {
-  border-color: #DCD6F7;
+  border-color: #dcd6f7;
   outline: 0;
   box-shadow: 0 0 0 4px rgba(244, 238, 255, 0.25);
 }
-
 
 textarea {
   min-height: 120px;
@@ -433,4 +475,3 @@ textarea {
   opacity: 0.9;
   transition: 0.3s;
 }
-

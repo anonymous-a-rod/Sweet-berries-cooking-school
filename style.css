@@ -6,6 +6,8 @@
 html,
 body {
   width: 100vw;
+  min-height: 100vh;
+  position: relative;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
@@ -251,20 +253,29 @@ p.box-text {
   }
 }
 
+main{
+  margin-bottom: 40px;
+}
+
 footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  bottom: 0;
   background: #ff4c4c;
   width: 100vw;
+  border: none;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 28px;
-  line-height: 40px;
+
   text-align: left;
 }
 
 footer p {
   color: #ffffff;
   padding-left: 50px;
-  margin-top: 24px;
 }
 
 @media only screen and (max-width: 1460px) {
